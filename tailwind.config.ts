@@ -52,6 +52,20 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'cyber': {
+					DEFAULT: 'hsl(var(--cyber-glow))',
+					dim: 'hsl(var(--cyber-glow-dim))'
+				},
+				'network': {
+					path: 'hsl(var(--network-path))',
+					active: 'hsl(var(--hop-active))',
+					inactive: 'hsl(var(--hop-inactive))'
+				},
+				'latency': {
+					good: 'hsl(var(--latency-good))',
+					warning: 'hsl(var(--latency-warning))',
+					error: 'hsl(var(--latency-error))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,7 +102,20 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'network-pulse': 'network-pulse 2s ease-in-out infinite',
+				'trace-line': 'trace-line 2s ease-in-out forwards'
+			},
+			backgroundImage: {
+				'gradient-cyber': 'var(--gradient-cyber)',
+				'gradient-network': 'var(--gradient-network)',
+				'gradient-bg': 'var(--gradient-bg)'
+			},
+			boxShadow: {
+				'cyber': 'var(--shadow-cyber)',
+				'cyber-strong': 'var(--shadow-cyber-strong)',
+				'glow-network': 'var(--glow-network)',
+				'glow-hop': 'var(--glow-hop)'
 			}
 		}
 	},
